@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
-import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle'
+import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton } from './ProjectsStyle'
 import ProjectCard from '../Cards/ProjectCards'
 import { projects } from '../../data/constants'
 
 
 const Projects = ({openModal,setOpenModal}) => {
-  const [toggle, setToggle] = useState('all');
+  const [toggle, setToggle] = useState('Websites');
   return (
     <Container id="projects">
       <Wrapper>
@@ -16,15 +16,15 @@ const Projects = ({openModal,setOpenModal}) => {
         </Desc>
         <ToggleButtonGroup >
        
-          {toggle === 'web app' ?
-            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+          {toggle === 'Websites' ?
+            <ToggleButton value="web app" onClick={() => setToggle('')}>Hide Projects</ToggleButton>
             :
-            <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+            <ToggleButton active value="Websites" onClick={() => setToggle('Websites')}>Show Projects</ToggleButton>
           }
          
         </ToggleButtonGroup>
         <CardContainer>
-          {toggle === 'all' && projects
+          {toggle === 'Websites' && projects
             .map((project) => (
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
