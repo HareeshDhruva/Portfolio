@@ -9,7 +9,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/HareeshDhruva",
   resume:"https://drive.google.com/file/d/1hdVteVSY-bu2YhFi0VtTkmIyHl2S185r/view?usp=sharing",
-  linkedin: "https://www.linkedin.com/in/hareesh-dhruva-13b151250/",
+  linkedin: "https://www.linkedin.com/in/hareesh-dhruva-797240296/",
   twitter: "https://twitter.com/dhruva_hareesh",
   insta: "https://www.instagram.com/hareesh_dhruva/",
   facebook: "https://www.facebook.com/hareeshdhruva",
@@ -243,7 +243,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://methodistschool-dankuni.webs.com/NEW%20BADGE.jpg",
+    img: "collegeLogo.png",
     school: "Govt.Polytechnic, Srikakulam",
     date: "Apr 2019 - Apr 2022",
     desc: "I completed my class Diploma at  Govt.Polytechnic, Srikakulam. In the Stream Of Computer Science And Engineering.",
@@ -251,7 +251,7 @@ export const education = [
   },
   {
     id: 2,
-    img: "https://methodistschool-dankuni.webs.com/NEW%20BADGE.jpg",
+    img: "schoolLogo.png",
     school: "Model School, Sopmeta",
     date: "Apr 2018 - Apr 2019",
     desc: "I completed my class 10 education at Model School, Sopmeta. where I studied Science with Computer Application.",
