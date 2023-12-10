@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import _default from '../../themes/default';
+// import _default from '../../themes/default';
 
 export const HeroContainer = styled.div`
     background: ${({ theme }) => theme.card_light};
@@ -161,7 +161,6 @@ export const SubTitle = styled.div`
         text-align: center;
     }
 
-    
     @media (max-width: 640px) {
         font-size: 16px;
         line-height: 32px;
@@ -176,7 +175,7 @@ export const ResumeButton = styled.a`
     width: 95%;
     max-width: 300px;
     text-align: center;
-    padding: 16px 0;
+    padding: 16px 10px;
     color:${({ theme }) => theme.white};
     border-radius: 20px;
     cursor: pointer;
@@ -196,12 +195,10 @@ export const ResumeButton = styled.a`
     filter: brightness(1);
     }    
     
-    
     @media (max-width: 640px) {
         padding: 12px 0;
         font-size: 18px;
     } 
-
 `;
 
 

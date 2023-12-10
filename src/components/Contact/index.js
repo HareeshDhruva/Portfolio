@@ -91,6 +91,7 @@ const ContactInput = styled.input`
 
 const ContactInputMessage = styled.textarea`
   flex: 1;
+  resize:none;
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.text_secondary};
   outline: none;
@@ -130,15 +131,16 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     emailjs.sendForm('service_mtlixoj', 'template_41x371n', form.current, 'B7XSmx8Wf93Ss5zZ8')
       .then((result) => {
+        if(result.status === 200)
         setOpen(true);
         form.current.reset();
       }, (error) => {
         console.log(error.text);
       });
   }
-
 
 
   return (
@@ -154,6 +156,7 @@ const Contact = () => {
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
+
         <Snackbar
           open={open}
           autoHideDuration={6000}

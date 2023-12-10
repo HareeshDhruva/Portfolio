@@ -243,7 +243,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://methodistschool-dankuni.webs.com/NEW%20BADGE.jpg",
+    img: "collegeLogo.png",
     school: "Govt.Polytechnic, Srikakulam",
     date: "Apr 2019 - Apr 2022",
     desc: "I completed my class Diploma at  Govt.Polytechnic, Srikakulam. In the Stream Of Computer Science And Engineering.",
@@ -251,7 +251,7 @@ export const education = [
   },
   {
     id: 2,
-    img: "https://methodistschool-dankuni.webs.com/NEW%20BADGE.jpg",
+    img: "schoolLogo.png",
     school: "Model School, Sopmeta",
     date: "Apr 2018 - Apr 2019",
     desc: "I completed my class 10 education at Model School, Sopmeta. where I studied Science with Computer Application.",
